@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List avec Calendrier d'Exécution</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+</head>
+<body>
+    <div class="todo-container">
+        <h1>Ma Liste de Tâches</h1>
+        
+        <!-- Input pour ajouter une nouvelle tâche -->
+        <input type="text" id="task-input" placeholder="Entrez une tâche...">
+        <input type="date" id="task-date">
+        <button onclick="ajouterTache()">Ajouter</button>
+
+        <!-- Bouton pour afficher le tableau de bord -->
+        <button onclick="afficherTableauDeBord()">Afficher Tableau de Bord</button>
+
+        <!-- Liste des tâches -->
+        <ul id="task-list"></ul>
+
+        <!-- Conteneur pour le tableau de bord (calendrier) -->
+        <div id="dashboard" style="display: none;">
+            <h2>Tableau de Bord - Vue Calendrier</h2>
+            <table id="calendar-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Tâches</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="JS/javascript.js"></script>
+</body>
+</html>
